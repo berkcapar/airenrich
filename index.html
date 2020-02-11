@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Air Enrichment - Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="icon" href="i/favicon.png" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/loginstyles.css" rel="stylesheet"/>
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+	</head> 
+	<body>
+<!-- Navigation Mobile type 4 -->
+
+<a class="open_menu white bg_dark_gray radius_full"><i class="fas fa-bars line_height40"></i></a>
+<div class="navigation_mobile type4">
+	<a class="close_menu white"><i class="fas fa-times"></i></a>
+	
+	<div class="padding_top30 padding_bottom60 inner">
+
+		<h3 class="top20 buttom40 padding_sizes20" style="text-align: center">Air Enrichment</h3>
+		<div class="hr height1 white opacity1"></div>
+		<a href="#products" class="left40 font_second font22 line_height70 link white"><i class="fas fa-asterisk font18 line_height70 right20"></i>Products</a>
+		<div class="hr height1 white opacity1"></div>
+		<a href="#solutions" class="left40 font_second font22 line_height70 link white"><i class="fas fa-briefcase font18 line_height70 right20"></i>Solutions</a>
+		<div class="hr height1 white opacity1"></div>
+		<a href="#pricing" class="left40 font_second font22 line_height70 link white"><i class="fas fa-paint-brush font18 line_height70 right20"></i>Pricing</a>
+		<div class="hr height1 white opacity1"></div>
+		<a href="#contact" class="left40 font_second font22 line_height70 link white"><i class="fas fa-coffee font18 line_height70 right20"></i>Contact Sales</a>
+		<div class="hr height1 white opacity1"></div>
+	</div>
+</div>
+
+
+
+<!-- Header 18 -->
+
+<header id="main" class="padding_top150 padding_bottom100 header_18">
+
+	<!-- Navigation 20 -->
+
+	<nav class="navigation_20 fixed-top transparent padding_top20 padding_bottom20">
+		<div class="container nopadding">
+			<div class="row">
+				<div class="col-lg-3 col-sm-12">
+					<a class="white font40 line_height40" href="#main"><b>Air</b> Enrichment</a>
+					<!--<div class="white font40 line_height40"><b>Air</b> Enrichment</div>-->
+				</div>
+				<div class="col-lg-9 text-right right_block">
+					<a href="#products" class="link white semibold font15 line_height40 uppercase spacing20 sides10">Products</a>
+					<a href="#solutions" class="link white semibold font15 line_height40 uppercase spacing20 sides10">Solutions</a>
+					<a href="#pricing" class="link white semibold font15 line_height40 uppercase spacing20 sides10">Pricing</a>
+					<a href="#contact" class="btn transparent_white size40 uppercase border border_white padding_sides20 semibold font15 spacing20 left10">Contact Sales</a>
+					<a class="btn transparent_white size40 uppercase border border_white padding_sides20 semibold font15 spacing20 left10" href="#" data-toggle="modal" data-target="#exampleModalLong">Sign In</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"> &times; </span> </button>
+
+              <nav class="center top10">
+                    <div class="nav nav-tab" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Log-in</a>
+                      <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">Register</a>
+                      
+                    </div>
+                  </nav>
+            </div>
+            <div class="modal-body">
+
+                    <div class="container">
+                            
+                                  <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+        
+                                        <div class="top10">
+                                        
+                                                <form>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Email address</label>
+                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                          
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputPassword1">Password</label>
+                                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                        </div>
+                                                        <div class="form-check">
+                                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                          <label class="form-check-label" for="exampleCheck1">Remember Me!</label>
+                                                        </div>
+                                                        <button type="submit" class="btn blue top20 size100 ">Login</button>
+                                                      </form>
+                                    
+                                    </div>
+        
+                                    </div>
+        
+        
+                                    <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+        
+                                        <div class="top10"> 
+        
+                                                <form>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Username*</label>
+                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+                                                         
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputPassword1">Email*</label>
+                                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                                <label for="exampleInputPassword1">Password*</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                              </div>
+
+                                                              <div class="form-group">
+                                                                    <label for="exampleInputPassword1">Confirm Password*</label>
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                                  </div>
+                                                        
+                                                        <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                <label class="form-check-label" for="exampleCheck1"> We communicate via email to process your request in line with <a href="/privacy.html">our privacy policy.</a> Please check the box to give us your permission to do this.</label>
+                                                              </div>
+                                                            
+                                                             
+                                                        <button type="submit" class="btn blue top20 size100">Sign Up</button>
+                                                      </form>
+                                    
+                                    </div>
+                                        </div>
+        
+                                   
+                                  </div>
+        
+        </div>
+
+
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+                    
+
+
+
+
+	<section class="container nopadding">
+		<div class="row flex-row ">
+		<div class="col-xl-6 col-lg-6 col-md-7">
+			<div id= "esmae" class="max_width230 left40 font18 white slogan"
+				style="color: white; margin: 0 0 30px 0; font-size: 2rem;">
+				Air Enrichment
+			</div>
+			<div id= "foto-mobil"class="col-xl-6 col-lg-6 col-md-5 ">
+				<img src="i/mainheader.png" style="width: 100%" alt="...">
+			</div>
+			<h1 class="white font_second light font56 ">Real-time customer intelligence for<br/> purposeful marketing actions</h1>
+			<div class="white light font22 opacity7 max_width570 hyphens top20 text">	
+					We help marketers to take meaningful steps in digital by creating big data solutions that enable to understand where and how customers interact with their brands.
+			</div>
+			<div class="top50">
+				<a href="#contact" class="btn blue size60 width200 right10 ">Request A Demo Now</a>				
+			</div>
+		</div>
+		<div id="foto-masaustu" class="col-xl-6 col-lg-6 col-md-5 "> 
+		<img src="i/mainheader.png"  style="width: 100%" alt="...">
+		</div>
+</div>
+		
+	</section>
+</header>
+
+<!-- Call to Action 14 -->
+
+<section id="products" class="call_to_action_14 bg_white padding_top90 padding_bottom75">
+	<div class="container nopadding max_width970 dark_gray text-center">
+		<h2 class="font42 font_second light">Know Who You're Connected To</h2>
+		<div class="max_width770 margin_auto top35 font18 light dark_blue text">
+				Optimize your next marketing strategy by using our powerful monitoring products which analyze where and how your digital traffic comes from.
+		</div>
+		<div class="row top70 inner">
+			<div class="col-md-6 block_right_border">
+				<div class="width370 bottom50 block">
+				
+					<i class="fas font80 fa-map-marked-alt"></i>
+					<div class="top20 font28 font_second light title">Trusted Geolocation Data</div>
+					<div class="margin_auto top10 max_width270 font18 light dark_blue text">
+							Using their IP addresses, we are helping you to convert your customers' geographic location to actionable marketing insights.
+					</div>
+					<a href="/geolocationdata.html" class="top40 btn transparent_blue size40 font12 semibold uppercase spacing15 padding_sides20 radius6 border border_blue">LEARN MORE</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row justify-content-center justify-content-md-end">
+					<div class="col-auto">
+						<div class="width370 bottom50 block">
+							<i class="material-icons" style="font-size: 100px">
+								devices_other
+								</i>
+							<div class="font28 font_second light title">Accurate Device Data</div>
+							<div class="margin_auto top10 max_width270 font18 light dark_blue text">
+									Helping you to deliver customized customer experience by generating unique device profiling across all connected mediums.
+
+							</div>
+							<a href="/devicedata.html" class="top40 btn transparent_blue size40 font12 semibold uppercase spacing15 padding_sides20 radius6 border border_blue">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Feature 7 -->
+
+<section id="solutions" class="feature_7 padding_top40 padding_bottom100" style="background-color: #0F0925;">
+	
+				
+						<div class="container nopadding">
+							<h2 class="bottom35 font42 font_second light white text-center">Expand and Strengthen Your Digital Presence</h2>
+							<div class="max_width670 margin_auto font18 light white text-center hyphens text text1">
+									Push the limits of digital with Airenrichment's products that allow instant monitoring of comprehensive and rational data from different sources with a strong authentication.
+							</div>
+
+							
+							<div class="top65 flex justify_between inner">
+
+								<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+									<img  src="i/targetedadvertising.jpg" class="width_full rounded" alt="" />
+									<div class="padding_sides20 top40 font28 light white title">Targeted Advertising</div>
+									<div class="padding_sides20 top25 font18 light white text hyphens">
+											Use our Geolocation Data Service which helps to focus on the areas where you can find the right customers to increase your ad campaing's <br> Return Of Investment(ROI)
+									</div>
+								</div>
+								<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+									<img src="i/localized.jpg" class="width_full rounded" alt="" />
+									<div class="padding_sides20 top40 font28 light white title">Content Localization</div>
+									<div class="padding_sides20 top25 font18 light white text hyphens">
+											Eliminate the barriers of cultural diversity and produce content that will have the desired and localized effect on every customer by using our location data service.
+									</div>
+								</div>
+								<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+									<img src="i/conversion.jpg" class="width_full rounded" alt="" />
+									<div class="padding_sides20 top40 font28 light white title">Boosted Conversion Rate</div>
+									<div class="padding_sides20 top25 font18 light white text hyphens">
+											By using our detailed data which provides more customer insight than ever, you can increase your conversion rate while offering opportunities tailored to customers' profiles.
+									</div>
+								</div>
+								<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+										<img src="i/personalized.jpg" class="width_full rounded" alt="" />
+										<div class="padding_sides20 top40 font28 light white title">Personalized Experience</div>
+										<div class="padding_sides20 top25 font18 light white text hyphens">
+												Use our data packages which are enriched with details for each user, based on location and device information, to satisfy your customers with offers they can't reject!
+										</div>
+							</div>
+							<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white" >
+									<img src="i/monitoring.jpg" class="width_full rounded" alt="" />
+									<div class="padding_sides20 top40 font28 light white title">Powerful Monitoring</div>
+									<div class="padding_sides20 top25 font18 light white text hyphens">
+											Gain deeper insight into what your customers do love with our strong profiling tools and optimize your advertisement campaings real time based on that.
+									</div>
+						</div>
+						<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+								<img src="i/auth.jpg" class="width_full rounded" alt="" />
+								<div class="padding_sides20 top40 font28 light white title">Simplfied Authentication</div>
+								<div class="padding_sides20 top25 font18 light white text hyphens">
+										Creating simplified user profile using IP adress, location data, browser, device model, and other attributes helps to authenticate and connect your potential customers fastly.
+								</div>
+					</div>
+					<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+							<img src="i/fraud.jpg" class="width_full rounded" alt="" />
+							<div class="padding_sides20 top40 font28 light white title">Fraud Prevention</div>
+							<div class="padding_sides20 top25 font18 light white text hyphens">
+									Detect suspicious activities from a user's IP adress which is included geolocation data, and frequency and number of sessions which is collected from device data.
+							</div>
+				</div>
+				<div class="width370 padding_bottom55 radius10 text-center margin_auto bottom50 block" style="border-style:solid" style="border-color : white">
+						<img src="i/digitalrights.jpg" class="width_full rounded" alt="" />
+						<div class="padding_sides20 top40 font28 light white title">Digital Rights</div>
+						<div class="padding_sides20 top25 font18 light white text hyphens">
+								By using our detailed data which provides more customer insight than ever, you can increase your conversion rate while offering opportunities tailored to customers' profiles.
+						</div>
+			</div>
+						
+							
+						</div>
+					</section>
+		
+		
+				
+			
+		  
+				
+	</section>
+<!-- Pricing Table 1 -->
+
+<section id="pricing" class="pricing_table_1 bg_white padding_top100 padding_bottom110">
+	<div class="container nopadding dark_blue text-center">
+		<h2 class="font42 font_second light dark_gray">Pricing Plans</h2>
+		<div class="max_width570 margin_auto top10 font18 light dark_blue text">
+			Start with free trial. No credit card needed. Cancel at anytime.
+		</div>
+		<div class="top50 font16 dark_gray text-center slider_menu">
+				Monthly
+				<a class="inline_block height40 width70 radius20 relative sides20 change_slide">
+					<i class="bg_white radius_full width30 height30 top5 left5 absolute"></i>
+				</a>
+				Yearly
+			</div>
+			<div class="slider">
+				<div>
+		<div class="row align-items-start top70 inner">
+			
+			<div class="col-lg-4 nopadding padding_top45 block noborder_right">
+				<div class="font28 font_second light dark_gray title">Startup</div>
+				<div class="top5 subtitle">Web Site Optimization, traffic segmentation and Analysis</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>4000</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">1M Request per Month</div>
+				<div class="line_height58 item">Monthly Data Updates</div>
+				<div class="line_height58 item">Standart Property Set</div>
+				<div class="line_height58 item">Two Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+			<div class="col-lg-4 nopadding padding_top45 block noborder_right">
+				<div class="font28 font_second light dark_gray title">Startup Pro</div>
+				<div class="top5 subtitle">Web Site Optimization, Traffic Segmentation and Analysis</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>5000</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">5M Request per Month</div>
+				<div class="line_height58 item">Weekly Data Updates</div>
+				<div class="line_height58 item">Full Property Set</div>
+				<div class="line_height58 item">Three Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+			<div class="col-lg-4 nopadding padding_top45 block radius_right">
+				<div class="font28 font_second light dark_gray title">Enterprise</div>
+				<div class="top5 subtitle">Integrate As A Component in Your Product</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>Custom</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">Unlimited Request per Month</div>
+				<div class="line_height58 item">Daily Data Updates</div>
+				<div class="line_height58 item">Extended Property Set</div>
+				<div class="line_height58 item">Four Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+		</div>
+	</div>
+		<div>
+		<div class="row align-items-start top70 inner">
+			
+			<div class="col-lg-4 nopadding padding_top45 block noborder_right">
+				<div class="font28 font_second light dark_gray title">Startup</div>
+				<div class="top5 subtitle">Web Site Optimization, traffic segmentation and Analysis</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>48000</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">1M Request per Month</div>
+				<div class="line_height58 item">Monthly Data Updates</div>
+				<div class="line_height58 item">Standart Property Set</div>
+				<div class="line_height58 item">Two Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+			<div class="col-lg-4 nopadding padding_top45 block noborder_right">
+				<div class="font28 font_second light dark_gray title">Startup Pro</div>
+				<div class="top5 subtitle">Web Site Optimization, Traffic Segmentation and Analysis</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>60000</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">5M Request per Month</div>
+				<div class="line_height58 item">Weekly Data Updates</div>
+				<div class="line_height58 item">Standart Property Set</div>
+				<div class="line_height58 item">Three Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+			<div class="col-lg-4 nopadding padding_top45 block radius_right">
+				<div class="font28 font_second light dark_gray title">Enterprise</div>
+				<div class="top5 subtitle">Integrate As A Component in Your Product</div>
+				<div class="top40 font62 light dark_gray price"><span class="inline_block font16">$</span>Custom</div>
+				<a href="#contact" class="top40 bottom50 btn size40 transparent_blue border border_blue radius6 padding_sides25">Let's Talk!</a>
+				<div class="line_height58 item">Unlimited Request per Month</div>
+				<div class="line_height58 item">Daily Data Updates</div>
+				<div class="line_height58 item">Full Property Set</div>
+				<div class="line_height58 item">Four Web Site</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+				<div class="line_height58 item">Lorem</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</section>
+
+<!-- Contact 4 -->
+
+<section id="contact" class="contact_4 padding_top145 padding_bottom145">
+	<div class="container nopadding max_width970 white">
+		<div class="row justify-content-between">
+			<div class="top50 col-lg-5 block_left">
+				<h2 class="font42 font_second light">Time to talk!</h2>
+				<div class="top30 max_width370 font22 light opacity7 text">
+						Powerful and comprehensive data provider, Air Enrichment helps you to analyze better your customers, increase your conversion rates, and many more! 
+						<br>
+						<br />If you willing to strenghten your digital effect and boost your return of invesment from now, request a demo or ask us further questions any question you want to evaluate.
+				</div>
+				<div class="max_width390 block_contact_holder">
+						
+					
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<form action="form-handler.php" method="post" class="max_width470 bg_white padding_sides50 padding_top55 padding_bottom35 radius10 dark_blue">
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="bottom35 input_block">
+								<div class="bottom10 font14 semibold uppercase spacing15">Your Name</div>
+								<input type="text" name="name" placeholder="First name" class="input width_full size50 border border_light_gray focus_green radius6 padding_sides10" />
+							</div>
+						</div>
+						<div class="col-sm-5">
+										
+								<div class="bottom35 input_block">
+										<div class="bottom10 font14 semibold uppercase spacing15">Your Company</div>
+										<input type="text" name="name" placeholder="Company" class="input width_full size50 border border_light_gray focus_green radius6 padding_sides10" />
+									</div>
+					</div>
+				</div>
+					<div class="bottom45 input_block">
+							<div class="bottom10 font14 semibold uppercase spacing15">Topic</div>
+							<select name="budget" class="input size50 border border_light_gray focus_green radius6 width_full padding_sides5">
+									<option selected="selected" class="d-none">I want to talk about</option>
+								<option>Get A Demo</option>
+								<option>Request A Price Offer</option>
+								<option>Other Inquries</option>
+							</select>
+						</div>
+					<div class="bottom10 font14 semibold uppercase spacing15">Your email</div>
+					<input type="email" name="email" placeholder="name@mail.com" class="bottom35 input width_full size50 border border_light_gray focus_green radius6 padding_sides20" />
+					<div class="bottom10 font14 semibold uppercase spacing15">Your Message</div>
+					<textarea name="message" class="bottom30 height110 input border border_light_gray focus_green radius6 width_full padding_sides20"></textarea>				
+					<div class="row">
+						<div class="col-sm-7">
+							<input type="checkbox" name="send_copy" class="hidden" id="contact_4_checkbox" checked />
+							<label for="contact_4_checkbox" class="top15 bottom30 checkbox check_green border_light_gray radius4 font14">Send me a copy</label>
+						</div>
+						<div class="col-sm-5">
+							<button class="btn size50 blue radius6 width_full padding_sides25">Send<i class="fas fa-angle-right left10"></i></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+
+<!-- Footer 4 -->
+
+<footer class="footer_4 bg_white padding_top65 padding_bottom30">
+		<div class="container nopadding">
+			<div class="row">
+				<div class="col-xl-6 bottom20">
+					<span class="font20 font_second dark_blue"><b>Air</b> Enrichment</span>
+					<span class="left20 font16 light medium_gray copyright">&copy; 2020 Air Enrichment All rights reserved.</span>
+				</div>
+				<div class="col-xl-6 bottom35 text-xl-right top5 links">
+					<a href="#products" class="font16 link dark_blue left35">Products</a>
+					<a href="#solitons" class="font16 link dark_blue left35">Solutions</a>
+					<a href="#pricing" class="font16 link dark_blue left35">Pricing</a>
+					<a href="/privacy.html" class="font16 link dark_blue left35">Privacy</a>
+					<a href="#contact" class="font16 link dark_blue left35">Contact Sales</a>
+
+					
+				</div>
+			</div>
+			
+			
+			
+	</footer>
+<!-- forms alerts -->
+<div class="alert alert-success alert-dismissible alert-form-success" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Thanks for your message!
+</div>
+<div class="alert alert-warning alert-dismissible alert-form-check-fields" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Please, fill in required fields.
+</div>
+<div class="alert alert-danger alert-dismissible alert-form-error" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	An error occurred while sending data :(
+</div>
+
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/aos.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+
+<script src="js/login.js"></script> <!-- Resource for Login JavaScript -->
+
+</body>
+</html>
